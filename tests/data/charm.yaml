@@ -1,0 +1,15 @@
+description: Overlay for attaching the current charm
+machines:
+  '0':
+    constraints: cores=2 mem=4G root-disk=16G
+applications:
+  bird0:
+    charm: {{ charm }}
+    num_units: 1
+    to:
+    - lxd:0
+  bird1:
+    charm: {{ charm }}
+    num_units: 1
+    to:
+    - lxd:0

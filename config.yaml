@@ -1,9 +1,9 @@
 options:
   as-number:
     type: int
-    description: AS Number
+    description: AS Number to use as identifier in Border Gateway Protocol
     default: 64512
   bgp-peers:
     type: string
-    description: BGP peers
+    description: Peers to communicate with via BGP
     default: "[]"
