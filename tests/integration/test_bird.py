@@ -47,6 +47,7 @@ async def test_bgp(ops_test):
     cmd = "juju run --unit bird0/0 birdc show protocols"
     rc, stdout, stderr = await ops_test.run(*shlex.split(cmd))
     assert rc == 0, f"birdc failed: {(stderr or stdout).strip()}"
+    # wokeignore:rule=master
     bgp_re = re.compile(r"bgp\d\s+BGP\s+master\s+up")
     match = bgp_re.findall(stdout)
     assert len(match) == 1
