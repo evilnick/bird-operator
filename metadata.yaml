@@ -1,7 +1,12 @@
 name: bird
+summary: A dynamic IP routing daemon
 description: |
-  Test charm running BIRD
-summary: |
-  Test charm running BIRD
+  The BIRD project aims to develop a dynamic IP routing daemon with full support
+  of all modern routing protocols, easy to use configuration interface and
+  powerful route filtering language.
+docs: https://discourse.charmhub.io/t/bird-docs-index/7011
+source: https://github.com/charmed-kubernetes/bird-operator
+issues: https://bugs.launchpad.net/charm-bird
 series:
-- focal
+  - focal
+  - jammy
