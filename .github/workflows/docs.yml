@@ -1,3 +1,6 @@
+name: Automated discourse docs
+on: [pull_request]
+
 jobs:
   publish-docs:
     name: Publish docs
